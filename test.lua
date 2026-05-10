@@ -711,27 +711,58 @@ QuestNeta = function()
   }
 end
 
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RealXiaoXiao/KuKi/main/Loader.lua"))()
-	Window = Library:CreateWindow({
-    Title = "Tày Hub",
-    Desc = "- Blox Fruit",
-    Image = "rbxassetid://73966916440074"
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+
+local Window = WindUI:CreateWindow({
+    Title = "Astral Hub",
+    Author = "By You",
+    Folder = "Astral",
+    Size = UDim2.fromOffset(520, 300),
+    Transparent = true,
+    Theme = "Sky",
+    SideBarWidth = 190
 })
 
-Tabs = {
-    Main = Window:AddTab("Farm"),
-    Settings = Window:AddTab("Config"),
-    Melee = Window:AddTab("Fighting Style"),
-    Quests = Window:AddTab("Items Farm"),
-    Teleport = Window:AddTab("Teleport"),
-    Sea = Window:AddTab("Sea Event"),
-    Raid = Window:AddTab("Raid"),
-    Shop = Window:AddTab("Shop"),
-    Stats = Window:AddTab("Stats"),
-    Player = Window:AddTab("Player"),
-    Visual = Window:AddTab("Visual"),
-    Fruit = Window:AddTab("Fruit"),
-    Misc = Window:AddTab("Misc")
+local Tabs = {
+    Main = Window:Tab({
+        Title = "Farm",
+        Icon = "house"
+    }),
+
+    Settings = Window:Tab({
+        Title = "Config",
+        Icon = "settings"
+    }),
+
+    Melee = Window:Tab({
+        Title = "Melee",
+        Icon = "sword"
+    }),
+
+    Quests = Window:Tab({
+        Title = "Quest",
+        Icon = "book"
+    }),
+
+    Teleport = Window:Tab({
+        Title = "Teleport",
+        Icon = "map"
+    }),
+
+    Player = Window:Tab({
+        Title = "Player",
+        Icon = "user"
+    }),
+
+    Visual = Window:Tab({
+        Title = "Visual",
+        Icon = "eye"
+    }),
+
+    Misc = Window:Tab({
+        Title = "Misc",
+        Icon = "layout-grid"
+    })
 }
  
 local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {Title = "Auto Farm Level", Description = "", Default = false})
