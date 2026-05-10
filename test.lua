@@ -711,8 +711,7 @@ QuestNeta = function()
   }
 end
 
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/VTDROBLOX/Animehub/refs/heads/main/ui_BananaHub_final_lua.txt"))()
-
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RealXiaoXiao/KuKi/main/Source.lua"))()
 Window = Library:CreateWindow({
     Title = "Tày Hub",
     Desc = "- Blox Fruit",
