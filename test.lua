@@ -32,8 +32,8 @@ end
 
 repeat local start = plr.PlayerGui:WaitForChild("Main"):WaitForChild("Loading") and game:IsLoaded() wait() until start
 World1 = game.PlaceId == 2753915549
-World2 = game.PlaceId == 79091703265657
-World3 = game.PlaceId == 100117331123089
+World2 = game.PlaceId == 4442272183
+World3 = game.PlaceId == 7449423635
 Sea = World1 or World2 or World3 or plr:Kick("❌ Error : A[12]Blox Fruits ❌")
 Marines = function() replicated.Remotes.CommF_:InvokeServer("SetTeam","Marines") end
 Pirates = function() replicated.Remotes.CommF_:InvokeServer("SetTeam","Pirates") end
@@ -86,6 +86,44 @@ gay = (function()
   if Water and workspace._WorldOrigin["Foam;"] then Water:Destroy() end        
 end)()
 local Attack = {}
+spawn(function()
+    while task.wait() do
+        pcall(function()
+            local CombatFramework = require(game.Players.LocalPlayer.PlayerScripts.CombatFramework)
+            local ac = CombatFramework.activeController
+
+            if ac and ac.equipped then
+                ac.timeToNextAttack = 0
+                ac.increment = 4
+                ac.hitboxMagnitude = 80
+                ac.attacking = false
+
+                if ac.blocking then
+                    ac:block(false)
+                end
+            end
+        end)
+    end
+end)
+
+spawn(function()
+    while task.wait() do
+        pcall(function()
+            game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
+        end)
+    end
+end)
+
+local CombatFrameworkR = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework))
+local RigController = CombatFrameworkR[2]
+
+spawn(function()
+    while task.wait() do
+        pcall(function()
+            RigController.activeController.hitboxMagnitude = 80
+        end)
+    end
+end)
 Attack.__index = Attack
 Attack.Alive = function(model) if not model then return end local Humanoid = model:FindFirstChild("Humanoid") return Humanoid and Humanoid.Health > 0 end
 Attack.Pos = function(model,dist) return (Root.Position - mode.Position).Magnitude <= dist end
