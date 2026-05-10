@@ -1,4 +1,3 @@
-
 repeat task.wait() until :IsLoaded() and game.Players.LocalPlayer:FindFirstChild("DataLoaded")
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
