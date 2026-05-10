@@ -711,8 +711,8 @@ QuestNeta = function()
   }
 end
 
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RealXiaoXiao/KuKi/main/Source.lua"))()
-Window = Library:CreateWindow({
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RealXiaoXiao/KuKi/main/Loader.lua"))()
+	Window = Library:CreateWindow({
     Title = "Tày Hub",
     Desc = "- Blox Fruit",
     Image = "rbxassetid://73966916440074"
