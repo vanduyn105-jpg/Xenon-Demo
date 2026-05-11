@@ -2699,7 +2699,7 @@ local function ShootLoop()
     end
 end
 
-Library = loadstring(game:HttpGet("https://pastefy.app/S6cTr945/raw"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ngvanduy11/Xenon-Hub/refs/heads/main/library.lua"))()
 
 Window = Library:CreateWindow({
     Title = "Xenon Hub",
