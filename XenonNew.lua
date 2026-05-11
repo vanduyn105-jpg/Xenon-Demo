@@ -1922,7 +1922,7 @@ QuestB = function()
 				NameMon = "Skull Slayer"
 				PosQ = CFrame.new(-16759.5898, 71.2837, 1595.3399)
 				PosM = CFrame.new(-16759.5898, 71.2837, 1595.3399)
-			elseif a >= 2600 and a <= 2624 then
+			 elseif a >= 2610 and a <= 2624 then
 				Mon = "Reef Bandit"
 				Qdata = 1;
 				Qname = "SubmergedQuest1";
