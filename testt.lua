@@ -2041,7 +2041,7 @@ function Kz.CreateMain(Y)
 	m.Transparency = .8;
 	dz.ReadyForGuiLoaded = true;
 	local y = Instance.new("ImageLabel", z);
-	y.Image = "rbxassetid://114926131401031";
+	y.Image = "rbxassetid://94628814063273";
 	y.BackgroundTransparency = 1;
 	y.ImageTransparency = .8;
 	y.Position = UDim2.new(0, -50, 0, -80);
