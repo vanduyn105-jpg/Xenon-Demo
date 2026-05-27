@@ -2074,7 +2074,7 @@ function Kz.CreateMain(Y)
 	F.BackgroundTransparency = 1.0;
 	F.Position = UDim2.new(0, 5, 0, dz.T1 and 5 or 0);
 	F.Size = UDim2.new(0, dz.T1 and 30 or 25, 0, dz.T1 and 15 or 25);
-	F.Image = "rbxassetid://114926131401031";
+	F.Image = "rbxassetid://94628814063273";
 	M.Name = "TextLabelMain";
 	M.Parent = w;
 	M.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
