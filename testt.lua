@@ -4214,7 +4214,7 @@ local Lz = Cz.T({ Page_Name = "Fruits", Page_Title = "Fruits" });
 local jz = Cz.T({ Page_Name = "Misc", Page_Title = "Misc" });
 local zP = vz.CreateSection("Discord Sever");
 zP.CreateButton({ Title = "Xenon Hub Script | Community", Callback = function()
-		setclipboard("https://discord.gg/rB8s5FSs6")
+		setclipboard("https://discord.gg/rDpNjJ4SSh")
 	end });
 local Gz = vz.CreateSection("Farming");
 Gz.CreateToggle({
