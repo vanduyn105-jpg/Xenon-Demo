@@ -691,7 +691,7 @@ QuestNeta = function()
 end
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local Window = Fluent:CreateWindow({Title = "Haidepzai Hub [Version:V2]",SubTitle = "| By ⚡Real.Haidz⚡",TabWidth = 155,Size = UDim2.fromOffset(555, 320),Acrylic = false,Theme = "Dark",MinimizeKey = Enum.KeyCode.End})
+local Window = Fluent:CreateWindow({Title = "Xenon Hub",SubTitle = "| By Van Duy",TabWidth = 155,Size = UDim2.fromOffset(555, 320),Acrylic = false,Theme = "Dark",MinimizeKey = Enum.KeyCode.End})
 
 local CoreGui = game:GetService("CoreGui")
 local VirtualInputManager = game:GetService("VirtualInputManager")
@@ -708,7 +708,7 @@ ToggleButton.Position = UDim2.new(0.15, 0, 0.15, 0)
 ToggleButton.BackgroundColor3 = Color3.fromRGB(30,30,30) -- nền cho tròn rõ
 ToggleButton.BackgroundTransparency = 0
 ToggleButton.BorderSizePixel = 0
-ToggleButton.Image = "rbxassetid://138869397973700"
+ToggleButton.Image = "rbxassetid://94628814063273"
 ToggleButton.ScaleType = Enum.ScaleType.Crop -- FIX TRÒN CHUẨN
 ToggleButton.Parent = ScreenGui
 
